@@ -2,7 +2,7 @@
   "name": "twit-card",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://olgamykhailova.github.io/twit-card/",
+  "homepage": "https://olgamykhailova.github.io/tweet-card/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
