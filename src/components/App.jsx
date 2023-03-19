@@ -1,16 +1,10 @@
+import { Card } from './Card/Card';
+import { Container } from './Card/Container/Container.styled';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Container>
+      <Card />
+    </Container>
   );
 };
