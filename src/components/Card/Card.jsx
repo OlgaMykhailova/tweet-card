@@ -10,8 +10,6 @@ export const Card = () => {
   const [isFollowing, setIsFolowing] = useState(false);
   const [followers, setFollowers] = useState(Number(user.followers));
 
-  console.log(user);
-
   useEffect(() => {
     const localFollowers = JSON.parse(localStorage.getItem(`followers`));
     if (localFollowers) {
