@@ -4,10 +4,13 @@ import { Logo } from 'components/Logo/Logo';
 import { Button } from 'components/Button/Button';
 import { Avatar } from 'components/Avatar/Avatar';
 import { Text } from 'components/Text/Text';
+import user from '../user.json';
 
 export const Card = () => {
   const [isFollowing, setIsFolowing] = useState(false);
-  const [followers, setFollowers] = useState(100500);
+  const [followers, setFollowers] = useState(Number(user.followers));
+
+  console.log(user);
 
   useEffect(() => {
     const localFollowers = JSON.parse(localStorage.getItem(`followers`));
@@ -33,8 +36,8 @@ export const Card = () => {
   return (
     <CardWrapper>
       <Logo />
-      <Avatar />
-      <Text>777 tweets</Text>
+      <Avatar avatar={user.avatar} />
+      <Text>{user.tweets} tweets</Text>
       <Text>{followers.toLocaleString('en-us')} followers</Text>
       <Button isFollowing={isFollowing} handleClick={handleClick}>
         {isFollowing ? 'following' : 'follow'}

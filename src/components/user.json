@@ -1,0 +1,10 @@
+{
+  "id": "1e0700a2-5183-4291-85cc-2065a036a683",
+  "name": "Boy",
+  "avatar": {
+    "url1x": "https://github.com/OlgaMykhailova/tweet-card/blob/main/src/media/avatar-1x.png?raw=true",
+    "url2x": "https://github.com/OlgaMykhailova/tweet-card/blob/main/src/media/avatar-2x.png?raw=true"
+  },
+  "tweets": "777",
+  "followers": "100500"
+}
