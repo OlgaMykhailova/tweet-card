@@ -1,21 +1,9 @@
 import { useState, useEffect } from 'react';
-import {
-  CardWrapper,
-  LogoImage,
-  PictureImage,
-  AccentLine,
-  BoyImage,
-  Text,
-  Button,
-} from './Card.styled';
-import {
-  logo1x,
-  logo2x,
-  picture1x,
-  picture2x,
-  boy1x,
-  boy2x,
-} from '../../media';
+import { CardWrapper } from './Card.styled';
+import { Logo } from 'components/Logo/Logo';
+import { Button } from 'components/Button/Button';
+import { Avatar } from 'components/Avatar/Avatar';
+import { Text } from 'components/Text/Text';
 
 export const Card = () => {
   const [isFollowing, setIsFolowing] = useState(false);
@@ -44,22 +32,11 @@ export const Card = () => {
   };
   return (
     <CardWrapper>
-      <LogoImage>
-        <source srcSet={`${logo1x} 1x,${logo2x} 2x`} />
-        <img src={logo1x} alt="logo" width="76" height="20" />
-      </LogoImage>
-      <PictureImage>
-        <source srcSet={`${picture1x} 1x,${picture2x} 2x`} />
-        <img src={picture1x} alt="picture1x" width="308" height="168" />
-      </PictureImage>
-      <AccentLine />
-      <BoyImage>
-        <source srcSet={`${boy1x} 1x,${boy2x} 2x`} />
-        <img src={boy1x} alt="boy" width="80" height="80" />
-      </BoyImage>
+      <Logo />
+      <Avatar />
       <Text>777 tweets</Text>
       <Text>{followers.toLocaleString('en-us')} followers</Text>
-      <Button type="button" onClick={handleClick} active={isFollowing}>
+      <Button isFollowing={isFollowing} handleClick={handleClick}>
         {isFollowing ? 'following' : 'follow'}
       </Button>
     </CardWrapper>
