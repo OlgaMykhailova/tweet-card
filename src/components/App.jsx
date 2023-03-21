@@ -1,5 +1,5 @@
 import { Card } from './Card/Card';
-import { Container } from './Card/Container/Container.styled';
+import { Container } from './Container/Container.styled';
 
 export const App = () => {
   return (

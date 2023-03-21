@@ -35,5 +35,3 @@ export const CardWrapper = styled.div`
       inset 0px 3.43693px 2.5777px #fbf8ff;
   }
 `;
-
-

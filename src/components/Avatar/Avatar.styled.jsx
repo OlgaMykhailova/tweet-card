@@ -23,4 +23,5 @@ export const EllipseImage = styled.img`
   z-index: 2;
   top: 0;
   left: 0;
+  
 `;

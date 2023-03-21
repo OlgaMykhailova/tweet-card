@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Text = styled.p`
+export const StyledText = styled.p`
   margin-top: auto;
   margin-bottom: 16px;
   font-family: 'Montserrat';

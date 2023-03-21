@@ -1,3 +1,5 @@
-export const Text = ({ children }) => {
-  return <Text>{children}</Text>;
+import { StyledText } from "./Text.styled";
+
+export const Text = ({children}) => {
+  return <StyledText>{children}</StyledText>;
 };
